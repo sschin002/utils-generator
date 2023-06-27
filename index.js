@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const morgan = require("morgan");
 
 const indexRouter = require("./routes");
 
+app.use(morgan("tiny"));
 app.use("/", indexRouter);
 
 app.listen(8000, () => {
