@@ -8,5 +8,5 @@ eroor handling
 middleware:
 morgan,pino,
 templatings
-
+ejs
 
