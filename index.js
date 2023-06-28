@@ -18,7 +18,14 @@ app.set("views", "./views");
 //Serving the static files
 app.use(express.static("public"));
 
+//middleware
 app.use("/", indexRouter);
+
+//Application level Error Handling
+app.use((err, req, res, next) => {
+  console.log(err);
+  res.status(500).send("Something went wrong");
+});
 
 app.listen(8000, () => {
   console.log("Server running on port 8000");

@@ -4,8 +4,10 @@ npm i nodemon --save-dev
 callback function
 params
 middleware
-eroor handling
-middleware:
+
+middleware:contaibs(req,res,next)
+-index page ma app.use for global error handling
+-aru route level ma chai callback fucn ra req ko bich ma lekhinxa
 morgan,pino,
 templatings
 ejs
@@ -13,3 +15,4 @@ html with images,css,js,html
 static files
 yarn start
 
+error handling
