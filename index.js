@@ -8,12 +8,15 @@ const app = express();
 const indexRouter = require("./routes");
 
 //setting up the thiird party middlewares
-app.use(morgan("tiny"));
-app.use(cors());
+app.use(morgan("tiny")); //middleware
+app.use(cors()); //middleware
 
 //Setting up the ejs templating
 app.set("view engine", "ejs");
 app.set("views", "./views");
+
+//Serving the static files
+app.use(express.static("public"));
 
 app.use("/", indexRouter);
 
