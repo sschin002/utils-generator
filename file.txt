@@ -10,4 +10,5 @@ morgan,pino,
 templatings
 ejs
 html with images,css,js,html
+static files
 
