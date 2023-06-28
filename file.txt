@@ -6,8 +6,8 @@ params
 middleware
 
 middleware:contaibs(req,res,next)
--index page ma app.use for global error handling
--aru route level ma chai callback fucn ra req ko bich ma lekhinxa
+-index page ma app.use for global error handling(app level)
+-aru (route level) ma chai callback fucn ra req ko bich ma lekhinxa
 morgan,pino,
 templatings
 ejs
