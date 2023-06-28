@@ -18,10 +18,15 @@ app.set("views", "./views");
 //Serving the static files
 app.use(express.static("public"));
 
+//trying to test application level erroe handling
+app.get("/broken", (req, res, next) => {
+  throw new Error("Broken");
+});
+
 //middleware
 app.use("/", indexRouter);
 
-//Application level Error Handling
+//Application level Error Handling//global level handling
 app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).send("Something went wrong");
