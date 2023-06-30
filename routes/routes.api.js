@@ -8,5 +8,8 @@ router.get("/", (req, res, next) => {
     next(err);
   }
 });
+router.post("/form", (req, res, next) => {
+  res.json({ msg: "Hello from api" });
+});
 
 module.exports = router;
