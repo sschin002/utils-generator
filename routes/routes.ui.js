@@ -10,6 +10,10 @@ router.get("/about", (req, res) => {
   res.render("about");
 });
 
+router.get("/form", (req, res) => {
+  res.render("form");
+});
+
 router.get("/services", (req, res) => {
   res.render("services");
 });
