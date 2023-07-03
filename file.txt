@@ -16,3 +16,4 @@ static files
 yarn start
 
 error handling
+tested
