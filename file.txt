@@ -17,3 +17,11 @@ yarn start
 
 error handling
 tested1
+
+TODO:
+1.database connection(mongoose)
+2.add modules(contact)
+3.add contact APIs
+4. create controllermodel
+5.create contact controller
+6.connect controller to apis
