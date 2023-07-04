@@ -1,3 +1,4 @@
+//initializing the routers
 const express = require("express");
 const router = express.Router();
 
@@ -10,7 +11,6 @@ router.get("/", (req, res, next) => {
 // Create
 router.post("/", (req, res, next) => {
   contactController.create(req.body);
-  res.json({ msg: "Thank you for submitting the form!" });
 });
 
 // List

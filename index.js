@@ -7,9 +7,9 @@ const app = express();
 const mongoose = require("mongoose");
 
 // mongodb connection
-mongoose
-  .connect("mongodb://localhost:27017/utils-generator")
-  .then(() => console.log("Database Connected!"));
+mongoose.connect("mongodb://localhost:27017/utils-generator").then(() => {
+  console.log("Database Connected!");
+});
 
 const indexRouter = require("./routes");
 

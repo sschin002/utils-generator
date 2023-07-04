@@ -1,5 +1,7 @@
+//initialize mongoose to create schema
 const mongoose = require("mongoose");
 
+//create schema
 const contactSchema = mongoose.Schema({
   name: String,
   phone: Number,
