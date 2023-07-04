@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require("mongoose");
 
 // mongodb connection
-mongoose.connect("mongodb://localhost:27017/utils-generator").then(() => {
+mongoose.connect("mongodb://127.0.0.1:27017/utils-generator").then(() => {
   console.log("Database Connected!");
 });
 
@@ -42,6 +42,6 @@ app.use((err, req, res, next) => {
   res.status(500).send("Something went wrong");
 });
 
-app.listen(8000, () => {
-  console.log("Server running on port 8000");
+app.listen(8001, () => {
+  console.log("Server running on port 8001");
 });
