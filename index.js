@@ -4,6 +4,12 @@ const cors = require("cors");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const app = express();
+const mongoose = require("mongoose");
+
+// mongodb connection
+mongoose
+  .connect("mongodb://localhost:27017/utils-generator")
+  .then(() => console.log("Database Connected!"));
 
 const indexRouter = require("./routes");
 
@@ -11,6 +17,7 @@ const indexRouter = require("./routes");
 app.use(morgan("tiny")); //middleware
 app.use(cors()); //middleware
 app.use(bodyParser.json());
+
 // var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(bodyParser.urlencoded({ extended: false }));
 
